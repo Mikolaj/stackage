@@ -65,6 +65,8 @@ packages:
         - assert-failure
         - minimorph
         - miniutter
+        - LambdaHack
+        - Allure
 
     "Jürgen Keck <jhyphenkeck@gmail.com> @j-keck":
         - wreq-stringless
@@ -3168,7 +3170,7 @@ packages:
         - blas-hs
 
     "Eitan Chatav <eitan@gmail.com> @echatav":
-        - squeal-postgresql # 0 # https://github.com/morphismtech/squeal/issues/30
+        - squeal-postgresql < 0 # https://github.com/morphismtech/squeal/issues/30
 
     "Sam Quinn <lazersmoke@gmail.com> @Lazersmoke":
         - ghost-buster
@@ -4005,7 +4007,7 @@ expected-test-failures:
     - serversession-backend-redis # redis
     - shake # Needs ghc on $PATH with some installed haskell packages
     - singletons # Needs ghc on $PATH with som installed haskell packages
-    - stack # https://github.com/fpco/stackage/issues/3707
+    # stack # https://github.com/fpco/stackage/issues/3082
     - users-persistent # sqlite
     - users-postgresql-simple # PostgreSQL
     - wai-cors # PhantomJS
